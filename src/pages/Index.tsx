@@ -62,7 +62,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-secondary/10">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -82,7 +82,7 @@ const Index = () => {
               <a href="#faq" className="text-gray-600 hover:text-primary transition-colors">FAQ</a>
               <a href="#contacts" className="text-gray-600 hover:text-primary transition-colors">Контакты</a>
             </nav>
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80">
+            <Button className="bg-primary hover:bg-primary/90">
               Войти
             </Button>
           </div>
@@ -91,7 +91,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-tertiary/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -106,7 +106,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-lg px-8 py-4">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
                   <Icon name="Search" size={20} className="mr-2" />
                   Найти проекты
                 </Button>
@@ -198,7 +198,7 @@ const Index = () => {
                       <div className="text-gray-500">дней</div>
                     </div>
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80">
+                  <Button className="w-full bg-primary hover:bg-primary/90">
                     <Icon name="Heart" size={16} className="mr-2" />
                     Поддержать проект
                   </Button>
@@ -216,7 +216,7 @@ const Index = () => {
       </section>
 
       {/* Create Project CTA */}
-      <section id="create" className="py-20 bg-gradient-to-r from-primary to-secondary">
+      <section id="create" className="py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -276,7 +276,7 @@ const Index = () => {
               <div className="relative bg-white p-8 rounded-2xl shadow-lg">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                       <Icon name="Shield" size={24} className="text-white" />
                     </div>
                     <div>
@@ -285,7 +285,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-secondary to-tertiary rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
                       <Icon name="Zap" size={24} className="text-white" />
                     </div>
                     <div>
@@ -294,7 +294,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-tertiary to-accent rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center">
                       <Icon name="Heart" size={24} className="text-white" />
                     </div>
                     <div>
