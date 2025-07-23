@@ -12,6 +12,7 @@ interface Project {
   backers: number;
   daysLeft: number;
   category: string;
+  image?: string;
 }
 
 interface ProjectCardProps {
@@ -23,7 +24,18 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="h-48 bg-gray-200 relative">
+      <div className="h-48 bg-gray-200 relative overflow-hidden">
+        {project.image ? (
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-300 flex items-center justify-center">
+            <span className="text-gray-500 text-sm">Нет изображения</span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         <Badge className="absolute top-4 left-4 bg-white text-gray-900">
           {project.category}

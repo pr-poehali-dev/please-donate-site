@@ -9,7 +9,8 @@ const featuredProjects: Project[] = [
     goal: 1200000,
     backers: 342,
     daysLeft: 12,
-    category: "Технологии"
+    category: "Технологии",
+    image: "/img/0ca4ae8d-3951-4426-98c2-ba6024507089.jpg"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const featuredProjects: Project[] = [
     goal: 500000,
     backers: 189,
     daysLeft: 25,
-    category: "Образование"
+    category: "Образование",
+    image: "/img/4d835562-c991-41cd-8a62-c8c425e1e52e.jpg"
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const featuredProjects: Project[] = [
     goal: 1500000,
     backers: 567,
     daysLeft: 8,
-    category: "Здоровье"
+    category: "Здоровье",
+    image: "/img/0ca4ae8d-3951-4426-98c2-ba6024507089.jpg"
   }
 ];
 
